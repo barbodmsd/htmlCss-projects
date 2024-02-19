@@ -1,0 +1,135 @@
+:root{
+   --body-c:#d5e1e6;
+   --background-card-c:#94a4ae;
+   --boxshadow-c:#39322a;
+}
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+a{
+   text-decoration: none;
+}
+body{
+   background-color:var(--body-c);
+}
+/* card-box style */
+.card-box{
+   width: 300px;
+   height: 450px;
+   margin: 200px auto;
+   perspective: 1000px;
+}
+.card-box:hover .card{
+   transform: rotatey(180deg);
+   box-shadow: 0px 0px 20px 5px teal;
+}
+/* card style */
+.card{
+   transform-style: preserve-3d;
+   width: 100%;
+   height: 100%;
+   box-shadow: 0px 0px 20px 5px var(--boxshadow-c);
+   position: relative;
+   transition: all 1s;
+   border-radius: 20px;
+}
+/* front-card,back-card both style */
+.front-card,.back-card{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+}
+.parent{
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+/* front-card style */
+.front-card{
+   background-color: var(--background-card-c);
+   border-radius: 20px;
+}
+.front-card img{
+   width: 100%;
+   height: 65%;
+   border-radius: 20px;
+}
+#p-txt{
+   position: absolute;
+   left: 50%;
+   transform: translatex(-50%);
+}
+.front-card .parent p{
+   font-size: 2em;
+   font-weight: bolder;
+   text-shadow: 7px 3px 2px var(--boxshadow-c);
+   position: relative;
+   animation-name:icon ;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+}
+.front-card .parent p::before{
+   content: '';
+   width: 20px;
+   height: 2px;
+   top: 50%;
+   right: 100%;
+   background-color: var(--boxshadow-c);
+   position: absolute;
+}
+/* animation for front-card */
+@keyframes icon{
+   0%{   
+      transform: translateX(0);
+   }        
+   20%{
+      transform: translateX(-8px);
+   }
+   40%{
+      transform: translateX(8px);
+   }
+   60%{
+      transform: translateX(-3px);
+   }
+   80%{
+      transform: translateX(3px);
+   }
+   100%{
+      transform: translateX(0);
+   }
+
+}
+/* back-card style */
+.back-card{
+   transform: rotatey(180deg);
+   background-color: var(--background-card-c);
+   border-radius: 20px;
+}
+.back-card img{
+   width: 65%;
+   height: 45%;
+   border-radius: 50%;
+   box-shadow: 0px 0px 20px 5px teal;
+   position: absolute;
+   top: 35%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.back-card .parent a{
+   color: black;
+   font-weight: bolder;
+   box-shadow: 0px 0px 20px 5px teal;
+   background-color: #c9d5d8;
+   border-radius: 20px;
+   padding: 10px;
+   position: absolute;
+   bottom: 20%;
+   left: 50%;
+   transform: translatex(-50%);
+}
+.back-card .parent a:active{
+   color: rgba(0, 255, 255, 0.426);
+}

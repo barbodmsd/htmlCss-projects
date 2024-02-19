@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 2000px;
+}
+/* start nav */
+nav{
+    background-color: #4c697d;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+ul{
+    list-style: none;
+    margin: 0px 350px;
+}
+a{
+    text-decoration: none;
+}
+nav > ul#menu >li{
+    margin: 0px 30px;
+    display: inline-block;
+    line-height: 80px;
+}
+nav > ul#menu >li >a{
+    color: #222b36;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s ;
+
+}
+nav > ul#menu >li:hover >a{
+    color: #c5d1d6;
+    border-bottom: 2px solid #c5d1d6;
+    padding: 5px 0px;
+}
+/* end nav */
+
+/* start section */
+section{
+    background-color: #4c697d;
+    width: 100%;
+    height: 70vh;
+    border: 4px solid #4c697d;
+    border-radius: 20px;
+}
+section >img#mountain{
+    width: 69%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+section > img#mono{
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+/* end section */
+
+/* start div */
+div{
+    background-color: #4c697d;
+    border: 4px solid #4c697d;
+    width: 300px;
+    height: 400px;
+    margin: 20px 60px;
+    border-radius: 20px;
+    display: inline-block;
+}
+div > img#first-photo{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    padding: 10px;
+}
+span{
+    text-align: center;
+    font-style: italic;
+
+}
+p{
+    text-align: justify;
+    padding: 10px;
+    font-style: italic;
+    font-weight: bolder;
+}
+div:hover >.txt{
+    color: #c5d1d6;
+    transition: all 0.5s;
+}
+/* end div */
+
+
+
+
+/* end style project */

@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 5000px;
+    background-color: beige;
+}
+/* card-item */
+.card-item{
+    min-height: 50vh;
+    margin-bottom: 20px;
+    background-color: gainsboro;
+    padding: 50px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.card{
+    min-width: 48%;
+    min-height: auto;
+    border-radius: 20px;
+    box-shadow:0px 0px 20px 5px #4a5855 ;
+    padding: 30px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+.photo{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('../assets/Anime-2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.written{
+    min-height: 50%;
+    text-align: center;
+}
+.button{
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: rgb(5, 71, 99);
+    font-size: 1.5em;
+    font-weight: bolder;
+    box-shadow: 0px 0px 20px 5px #4a5855;
+}
+h2{
+    font-size: 2em;
+    color: darkslategrey;
+    text-shadow: 6px 2px 5px;
+}
+p{
+    max-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+ /* gallery with display flex */
+ section#gallery{
+    padding: 50px 50px;
+    background-color: #7c776a;
+ }
+ section#border{
+    border-radius: 20px;
+    overflow: hidden;
+ }
+ #border section .hover img{
+    transition: all 1s;
+ }
+ #border section .hover{
+    overflow: hidden;
+ }
+ #border section .hover:hover img{
+    transform: rotate(45deg) scale(3);
+ }
+  /* style for the photo */
+  #blue img,#left img,
+  #right img,#top div#red img,
+  #div-main img,#bottom-left img,
+  #bottom-right img{
+     width: 100%;
+     height: 100%;
+  }
+
+ /* section-top */
+ section#top{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 7px;
+ }
+ #top div{
+    width: 50%;
+    height: 100%;
+ }
+ #top div#blue{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+ }
+ #top div#blue div{
+    width: 49%;
+    height: 49%;
+ } 
+ /* section-main */
+ section#main{
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+ }
+ /* left-div */
+ #left{
+    width: 25%;
+    height: 100%;
+ }
+ #left div{
+    width: 100%;
+    height: 49%;
+ }
+#left1{
+    margin-bottom:1%;
+}
+#left2{
+    width: 100%;
+    height: 50%;
+}
+/* main-div */
+#div-main{
+    width: 50%;
+    height: 100%;
+}
+/* right-div */
+#right{
+    width: 25%;
+    height: 100%;
+ }
+ #right div{
+    width: 100%;
+    height: 49%;
+ }
+#right1{
+    margin-bottom: 1%;
+}
+#right2{
+    width: 100%;
+    height: 49%;
+}
+/* section-bottom */
+section#bottom{
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+    display: flex;
+    gap: 7px;
+}
+#bottom-left{
+    width: 50%;
+    height: 100%;
+}
+#bottom-right{
+    width: 50%;
+    height: 100%;
+}
+/* grid-area */
+#grid-area{
+    min-height: 70vh;
+    display: grid;
+    padding: 100px 5%;
+    grid-template-areas: '  nav nav nav header'
+    'aside-left main main aside-right'
+    ' footer footer footer aside-right';
+    gap: 10px;
+}
+#nav{
+    height: 200px;
+    background-color: teal;
+    grid-area: nav;
+}
+#header{
+    height: 200px;
+    background-color: red;
+    grid-area: header;
+}
+#aside-left{
+    height: 350px;
+    background-color: blue;
+    grid-area: aside-left;
+}
+#main-div{
+    height: 350px;
+    background-color: orange;
+    grid-area: main;
+}
+#aside-right{
+    background-color: blue;
+    grid-area: aside-right;
+}
+#footer{
+    height: 200px;
+    background-color: #4a5855;
+    grid-area: footer;
+}
+/* It's just for the middle of the text (don't take it seriously brother :) */
+.text-style{
+    text-align: center;
+    line-height: 200px;
+}
