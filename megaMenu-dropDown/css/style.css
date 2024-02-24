@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #91a7b6;
+    height: 2000px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* start nav */
+nav{
+    background-color: gainsboro;
+    max-width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+    z-index: 100;
+}
+nav > ul{
+    margin-left: 350px;
+}
+nav > ul >li{
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+nav > ul >li >a{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: teal;
+    line-height: 80px;
+    border-bottom: 2px solid transparent;
+    padding: 4px;
+    transition: all 0.5s;
+}
+nav > ul >li:hover >a{
+    color: #2f4246;
+    border-bottom: 2px solid #2f4246;
+    padding-bottom: 4px;
+}
+nav ul > li >#dropdown{
+    position: absolute;
+    background-color: gainsboro;
+    padding: 20px 20px;
+    border-radius:0px 0px 10px 10px;
+    border-top: 1px solid black;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    transform: translate(17%);
+    z-index: 100;
+}
+nav ul > li >#dropdown > li{
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: teal;
+}
+nav ul > li >#dropdown > li:hover{
+    color: #2f4246;
+    border-bottom: 2px solid #2f4246;
+}
+nav > ul >li:hover >#dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+nav > ul >li > #dropdown >li{
+    position: relative;
+    color: teal;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+}
+nav >ul >li >#dropdown >li >#dropdown2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(65px,-10px);
+    background-color: gainsboro;
+    padding:10px 10px ;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+nav >ul >li >#dropdown >li >#dropdown2 > li{
+    margin-bottom: 10px;
+    color: teal;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+}
+nav > ul > li > #dropdown > li >#dropdown2> li:hover{
+    color: #2f4246;
+    border-bottom: 2px solid #2f4246;
+}
+nav >ul >li >#dropdown >li:hover #dropdown2{
+    opacity: 1;
+    visibility: visible;
+}
+nav > ul > li > div#mega{
+    width: 1320px;
+    height: 400px;
+    background-color: gainsboro;
+    left: -830px;
+    transform: translate(150px);
+    position: absolute;
+    border-radius: 0px 0px 5px 5px;
+    border-top: 1px solid black;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s;
+}
+nav > ul > li:hover > div#mega{
+    opacity: 1;
+    visibility: visible;
+}
+nav > ul > li > div#mega div#img>figure img{
+    width: 300px;
+    height: auto;
+    margin: 20px;
+}
+nav > ul > li > div#mega div#img>figure figcaption p{
+    width: 250px;
+    height: auto;
+    text-align: justify;
+    font-weight: bolder;
+    margin-left: 45px;
+    color: teal;
+}
+nav > ul > li > div#mega div#img>figure figcaption:hover p{
+    color: #2f4246;
+}
+#tabel{
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    transform: translate(400px);
+}
+nav >ul >li >div#mega >div#tabel > table{
+    width: 800px;
+    color: teal;
+    font-weight: bolder;
+    border-collapse: collapse;
+}
+table tr{
+    border: 1px solid black;
+    text-align: center;
+}
+table td,th{
+    padding: 5px 5px;
+}
+table thead tr{
+    background-color: rgb(135, 195, 255);
+}
+table tr:nth-child(even){
+    background-color: thistle;
+}
+table tbody tr:hover{
+    background-color: #2f4246;
+    color: white;
+}
+h1{
+    font-style: italic;
+    color: teal;
+}
+/* end nav */
+
+/* start section */
+section#banner{
+    width: 100%;
+    height: 70vh;
+    background-image: url('../assets/Moments-in-the-Ocean-Images-created-from-water-light.29__880.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+section#banner >h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-95%,-150%);
+    font-size: 1.9em;
+    color: #d4ffff;
+    font-weight: bolder;
+    text-shadow: 5px px 20px 5px gray;
+}
+section#banner > h1 > span{
+    color: rgb(43, 32, 255);
+    font-size: 2em;
+}
+/* end section */
+
+#txt{
+    color: black;
+    margin:20px  500px;
+}
+#txt2{
+    color: black;
+    margin: 350px 500px;
+}
+#txt2 span{
+    color: crimson;
+}
