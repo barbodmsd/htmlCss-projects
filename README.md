@@ -1,2 +1,1 @@
-# htmlCss-projects
-4 Html css project
+Html and css exercises and projects for when I was learning.
