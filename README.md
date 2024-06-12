@@ -1,2 +1,2 @@
-Html Css
-Html and css exercises and projects for when I was learning.
+# Html Css
+### `Html css` exercises and projects for when I was learning.
